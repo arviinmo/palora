@@ -13,11 +13,11 @@ export default function Home() {
       </Head>
       <div className="w-3/3 bg-slate-300 flex flex-col items-center justify-center h-screen">
         <div className="flex flex-row h-2/3 rounded-2xl place-items-center w-1/2 p-5 bg-blue-400">
-          <div className="w-full h-full items-right bg-red-500">
+          <div className="w-full h-full bg-red-500">
             <PassGen />
           </div>
         </div>
-        <footer className="bg-gray-100 mt-4 flex flex-wrap items-center">
+        <footer className="font-Poppins mt-4 flex flex-wrap items-center">
           Proudly made in
           <Link href="#">
             <a className="pl-1 pr-1" target="_blank">
@@ -30,8 +30,11 @@ export default function Home() {
               />
             </a>
           </Link>
+          by
           <Link href="https://arvin.vercel.app">
-            <a target="_blank">Arvin Mostafaei</a>
+            <a className="pl-1 font-Yeseva" target="_blank">
+              Arvin Mostafaei
+            </a>
           </Link>
         </footer>
       </div>
