@@ -11,7 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-3/3 bg-slate-300 flex flex-col items-center justify-center h-screen">
-        <div className="grid h-2/3 rounded-2xl place-items-center w-1/2 bg-blue-400"></div>
+        <div className="flex flex-row h-2/3 rounded-2xl place-items-center w-1/2 p-5 bg-blue-400">
+          <div className="w-full h-full items-right bg-red-500">
+            
+          </div>
+        </div>
         <footer className="bg-gray-100 mt-4 flex flex-wrap items-center">
           Proudly made in
           <Link href="#">
