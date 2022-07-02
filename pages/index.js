@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-3/3 bg-slate-300 flex flex-col items-center justify-center h-screen">
-        <div className="flex flex-row h-2/3 rounded-2xl place-items-center w-1/2 p-5 bg-blue-400">
+        <div className="flex flex-row h-2/3 rounded-2xl place-items-center lg:w-1/2 md:w-9/12 sm:w-11/12 p-5 bg-blue-400">
           <div className="w-full h-full bg-red-500">
             <PassGen />
           </div>
