@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,9 +13,23 @@ export default function Home() {
       </Head>
 
       <footer className={styles.footer}>
-        Proudly made in
-        <Image src="/fav.svg" alt="Vercel Logo" width={32} height={16} href="https://en.wikipedia.org/wiki/Kurdistan"/>
-        by Arvin Mostafaei
+        Proudly made in 
+        <Link href="#">
+          <a target="_blank">
+            <Image
+              src="/fav.svg"
+              alt="Vercel Logo"
+              width={32}
+              height={16}
+              title="Kurdistan"
+              className="kurdistan"
+            />
+          </a>
+        </Link>
+        by
+        <Link href="https://arvin.vercel.app">
+          <a target="_blank">Arvin Mostafaei</a>
+        </Link>
       </footer>
     </div>
   );
