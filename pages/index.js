@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../components/LogoSection/Logo";
 import PassGen from "../components/passwordgenerator/PassGen";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-full">
       <Head>
         <title>Palora - Strongest password Generator ever!</title>
       <meta charset="UTF-8" />
@@ -14,9 +15,14 @@ export default function Home() {
       <meta name="author" content="Arvin Mostafaei" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="w-3/3 flex flex-col items-center justify-center h-screen">
-        <div className="flex flex-row sl:h-[28rem] rounded-2xl place-items-center lg:w-2/5 md:w-9/12 sm:w-11/12 sm:h-[24rem] p-5 bg-orange-200	">
+      </Head> 
+        <div className="flex w-max h-full p-1 m-4">
+      <Link href="./">
+          <a><Logo /></a>
+      </Link>
+        </div>
+      <div className="w-full flex place-items-center flex-col items-center justify-center h-full content-center mt-[10rem]">
+        <div className="flex flex-row sl:h-[28rem] rounded-2xl place-items-center lg:w-2/5 md:w-9/12 sm:w-11/12 sm:h-[24rem] p-5 bg-[#E0F9B5]">
           <div className="w-full h-full">
             <PassGen />
           </div>
