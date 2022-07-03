@@ -8,7 +8,7 @@ function PassGen() {
   return (
     <div>
       <div className="flex flex-row flex-wrap">
-        <h1 className="text-3xl font-Yeseva">Password Length:</h1>
+        <h1 className="sl:text-3xl xs:text-xl font-Yeseva">Password Length:</h1>
         <PassLength />
       </div>
         <RadioOptions />
