@@ -17,6 +17,9 @@ module.exports = {
         Yeseva: ["'Yeseva One'", "cursive"],
         Poppins: ["Poppins", "sans-serif"]
       },
+      colors: {
+
+      },
     },
     container: {
       center: true,
