@@ -11,7 +11,7 @@ function OutputPass() {
         />
         <button
           type="button"
-          className="flex w-max ml-2 px-2 pt-2.5 pb-2 bg-blue-600 text-white font-medium font-Yeseva text-sm leading-normal uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-center"
+          className="flex w-max ml-2 px-2 pt-2.5 pb-2 bg-blue-600  text-white font-medium font-Poppins text-sm leading-normal uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-center"
         >
           Copy to Clipboard!
         </button>
