@@ -1,5 +1,6 @@
 import React from "react";
 import GenButton from "../GenButton/GenButton";
+import OutputPass from "../OutputPass/OutputPass";
 import PassLength from "../passLength/PassLength";
 import RadioOptions from "../RadioOptions/RadioOptions";
 
@@ -12,6 +13,7 @@ function PassGen() {
       </div>
         <RadioOptions />
         <GenButton />
+        <OutputPass />
     </div>
   );
 }
