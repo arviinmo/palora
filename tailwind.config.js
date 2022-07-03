@@ -6,14 +6,11 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'xs': '320px',
       'sm': '375px',
-      // => @media (min-width: 576px) { ... }
-
+      'sl': '426px',
       'md': '960px',
-      // => @media (min-width: 960px) { ... }
-
       'lg': '1460px',
-      // => @media (min-width: 1440px) { ... }
     },
     extend: {
       fontFamily: {
