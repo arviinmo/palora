@@ -16,8 +16,8 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-3/3 flex flex-col items-center justify-center h-screen">
-        <div className="flex flex-row h-2/4 rounded-2xl place-items-center lg:w-2/5 md:w-9/12 sm:w-11/12 p-5 bg-blue-400">
-          <div className="w-full h-full bg-red-500">
+        <div className="flex flex-row sl:h-[28rem] rounded-2xl place-items-center lg:w-2/5 md:w-9/12 sm:w-11/12 sm:h-[24rem] p-5 bg-orange-200	">
+          <div className="w-full h-full">
             <PassGen />
           </div>
         </div>
