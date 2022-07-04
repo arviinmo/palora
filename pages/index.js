@@ -16,7 +16,7 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" href="/favicon.ico" />
       </Head> 
-      <div className="flex w-max h-full p-1 mt-2 xs:mr-1">
+      <div className="flex w-max h-full p-1 mt-20 xs:mr-1">
         <Link href="./">
             <a><Logo /></a>
         </Link>
