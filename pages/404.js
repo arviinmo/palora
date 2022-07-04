@@ -1,35 +1,23 @@
 export default function Custom404() {
   return (
-    <div
-      className="
-    flex
-    items-center
-    justify-center
-    w-screen
-    h-screen
-    bg-white
-  "
-    >
-      <div className="px-40 py-20 bg-white rounded-md">
-        <div className="flex flex-col items-center">
-          <h1 className="font-bold text-blue-600 text-9xl">404</h1>
+<main className="h-screen w-full flex flex-col justify-center items-center bg-[#ffffff]">
+	<h1 className="text-9xl font-extrabold text-black tracking-widest">404</h1>
+	<div className="bg-[#FF6A3D] text-white px-2 text-sm rounded rotate-12 absolute">
+		Page Not Found
+	</div>
+	<button className="mt-5">
+      <a href="./"
+        className="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
+      >
+        <span
+          className="absolute inset-0 transition-transform translate-x-0.5 translate-y-0.5 bg-[#FF6A3D] group-hover:translate-y-0 group-hover:translate-x-0"
+        ></span>
 
-          <h6 className="mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl">
-            <span className="text-red-500">Oops!</span> Page not found
-          </h6>
-
-          <p className="mb-8 text-center text-gray-500 md:text-lg">
-            The page you’re looking for doesn’t exist.
-          </p>
-
-          <a
-            href="./"
-            className="px-6 py-2 text-sm rounded-lg font-semibold text-blue-800 bg-blue-100"
-          >
-            Go home
-          </a>
-        </div>
-      </div>
-    </div>
+        <span className="relative block px-8 py-3 bg-[#ffffff] border border-current">
+          <router-link>Go Home</router-link>
+        </span>
+      </a>
+    </button>
+</main>
   );
 }
