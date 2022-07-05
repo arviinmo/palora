@@ -8,6 +8,8 @@ function OutputPass() {
           type="text"
           className="xs:text-xs sl:text-sm w-4/6 p-1.5 rounded-md text-gray-700 font-bold font-Poppins bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none"
           placeholder="Your new password will appear here."
+          value=""
+          readOnly
         />
         <button
           type="button"
