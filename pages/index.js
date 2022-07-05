@@ -3,8 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../components/LogoSection/Logo";
 import PassGen from "../components/passwordgenerator/PassGen";
+import axios from "axios";
 
-export default function Home() {
+
+export default function Home(props) {
+  console.log(props.data)
+
   return (
     <div className="h-full">
       <Head>
@@ -51,3 +55,16 @@ export default function Home() {
     </div>
   );
 }
+
+
+
+export const getServerSideProps = async () => {
+  const data = await axios.get(
+    "http://httpstat.us/500"
+  );
+  return {
+    props: {
+      data: data.data,
+    },
+  };
+};
