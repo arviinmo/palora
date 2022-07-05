@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../components/LogoSection/Logo";
 import PassGen from "../components/passwordgenerator/PassGen";
-import axios from "axios";
 
 
 export default function Home(props) {
@@ -55,16 +54,3 @@ export default function Home(props) {
     </div>
   );
 }
-
-
-
-export const getServerSideProps = async () => {
-  const data = await axios.get(
-    "http://httpstat.us/500"
-  );
-  return {
-    props: {
-      data: data.data,
-    },
-  };
-};
