@@ -36,7 +36,16 @@ function PassGen() {
         includeSymbols={includeSymbols}
         setIncludeSymbols={setIncludeSymbols}
       />
-      <GenButton />
+      <GenButton
+        includeUpperCase={includeUpperCase}
+        setIncludeUpperCase={setIncludeUpperCase}
+        includeLowerCase={includeLowerCase}
+        setIncludeLowerCase={setIncludeLowerCase}
+        includeNumbers={includeNumbers}
+        setIncludeNumbers={setIncludeNumbers}
+        includeSymbols={includeSymbols}
+        setIncludeSymbols={setIncludeSymbols}
+      />
       <OutputPass />
     </div>
   );

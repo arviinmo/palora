@@ -2,31 +2,31 @@ import React from "react";
 import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from '../Charecter'
 
 
-function GenButton() {
+function GenButton(props) {
   const handleGeneratePassword = () => {
     if (
-      !includeUpperCase &&
-      !includeLowerCase &&
-      !includeNumbers &&
-      !includeSymbols
+      !props.includeUpperCase &&
+      !props.includeLowerCase &&
+      !props.includeNumbers &&
+      !props.includeSymbols
     ) {
       console.log("To generate password you must select atleast one checkbox");
     } else {
       let characterList = "";
-      if (includeNumbers) {
+      if (props.includeNumbers) {
         characterList = characterList + numbers;
       }
-      if (includeUpperCase) {
+      if (props.includeUpperCase) {
         characterList = characterList + upperCaseLetters;
       }
-      if (includeLowerCase) {
+      if (props.includeLowerCase) {
         characterList = characterList + lowerCaseLetters;
       }
-      if (includeSymbols) {
+      if (props.includeSymbols) {
         characterList = characterList + specialCharacters;
       }
       setPassword(createPassword(characterList));
-      console.log("Password is generated successfully");
+      console.log(characterList);
     }
   };
 
