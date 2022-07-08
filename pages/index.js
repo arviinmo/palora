@@ -4,22 +4,29 @@ import Link from "next/link";
 import Logo from "../components/LogoSection/Logo";
 import PassGen from "../components/passwordgenerator/PassGen";
 
-
 export default function Home() {
   return (
     <div className="h-full">
       <Head>
         <title>Palora - Strongest password Generator ever!</title>
-      <meta charset="UTF-8" />
-      <meta name="description" content="small project for generationg strong password in a second!" />
-      <meta name="keywords" content="Password, Palora, Generator, Password-Generator, sifre" />
-      <meta name="author" content="Arvin Mostafaei" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" href="/favicon.ico" />
-      </Head> 
+        <meta charset="UTF-8" />
+        <meta
+          name="description"
+          content="small project for generationg strong password in a second!"
+        />
+        <meta
+          name="keywords"
+          content="Password, Palora, Generator, Password-Generator, sifre"
+        />
+        <meta name="author" content="Arvin Mostafaei" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex w-max h-full p-1 mt-2 xs:mr-1">
         <Link href="./">
-            <a><Logo /></a>
+          <a>
+            <Logo />
+          </a>
         </Link>
       </div>
       <div className="w-full flex place-items-center flex-col items-center justify-center h-full content-center mt-[10rem]">
