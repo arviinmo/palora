@@ -2,11 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 
-function RadioOptions() {
-  const [includeUpperCase, setIncludeUpperCase] = useState(false);
-  const [includeLowerCase, setIncludeLowerCase] = useState(false);
-  const [includeNumbers, setIncludeNumbers] = useState(false);
-  const [includeSymbols, setIncludeSymbols] = useState(false);
+function RadioOptions(props) {
 
   return (
     <div className="font-Poppins md:ml-5 w-max text-xl sm:ml-2">
@@ -20,8 +16,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
-          checked={includeSymbols}
-          onChange={(e) => setIncludeSymbols(e.target.checked)}
+          checked={props.includeSymbols}
+          onChange={(e) => props.setIncludeSymbols(e.target.checked)}
         >
           Include Symbols
         </label>
@@ -36,8 +32,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
-          checked={includeNumbers}
-          onChange={(e) => setIncludeNumbers(e.target.checked)}
+          checked={props.includeNumbers}
+          onChange={(e) => props.setIncludeNumbers(e.target.checked)}
         >
           Include Numbers
         </label>
@@ -52,8 +48,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
-          checked={includeUpperCase}
-          onChange={(e) => setIncludeUpperCase(e.target.checked)}
+          checked={props.includeUpperCase}
+          onChange={(e) => props.setIncludeUpperCase(e.target.checked)}
         >
           Include Uppercase Characters
         </label>
@@ -68,8 +64,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
-          checked={includeLowerCase}
-          onChange={(e) => setIncludeLowerCase(e.target.checked)}
+          checked={props.includeLowerCase}
+          onChange={(e) => props.setIncludeLowerCase(e.target.checked)}
         >
           Include Lowercase Characters
         </label>
