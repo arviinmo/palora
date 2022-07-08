@@ -25,10 +25,19 @@ function GenButton(props) {
       if (props.includeSymbols) {
         characterList = characterList + specialCharacters;
       }
-      setPassword(createPassword(characterList));
-      console.log(characterList);
+      props.setPassword(createPassword(characterList));
     }
   };
+
+  const createPassword = (characterList) => {
+    let password = ""
+    const characterListLength = characterList.length
+    for (let i = 0; i < props.passwordLength; i++) {
+      const characterIndex = Math.round(Math.random() * characterListLength)
+      password = password + characterList.charAt(characterIndex)
+    }
+    return password
+  }
 
   return (
     <div className="flex text-center items-center justify-center lg:mt-8 xs:mt-2">

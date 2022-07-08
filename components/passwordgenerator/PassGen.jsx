@@ -5,6 +5,7 @@ import RadioOptions from "../RadioOptions/RadioOptions";
 import { useState } from "react";
 
 function PassGen() {
+  const [password, setPassword] = useState("");
   const [passwordLength, setPasswordLength] = useState(16);
   const [includeUpperCase, setIncludeUpperCase] = useState(false);
   const [includeLowerCase, setIncludeLowerCase] = useState(false);
@@ -45,6 +46,10 @@ function PassGen() {
         setIncludeNumbers={setIncludeNumbers}
         includeSymbols={includeSymbols}
         setIncludeSymbols={setIncludeSymbols}
+        password={password}
+        setPassword={setPassword}
+        passwordLength={passwordLength}
+        setPasswordLength={setPasswordLength}
       />
       <OutputPass />
     </div>

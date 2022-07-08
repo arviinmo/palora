@@ -5,9 +5,7 @@ import Logo from "../components/LogoSection/Logo";
 import PassGen from "../components/passwordgenerator/PassGen";
 
 
-export default function Home(props) {
-  console.log(props.data)
-
+export default function Home() {
   return (
     <div className="h-full">
       <Head>
