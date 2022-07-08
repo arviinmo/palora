@@ -1,7 +1,6 @@
 import React from "react";
 import GenButton from "../GenButton/GenButton";
 import OutputPass from "../Output&Copy/Output&Copy";
-import PassLength from "../passLength/PassLength";
 import RadioOptions from "../RadioOptions/RadioOptions";
 import { useState } from "react";
 

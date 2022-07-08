@@ -6,28 +6,7 @@ function RadioOptions() {
   const [includeLowerCase, setIncludeLowerCase] = useState(false);
   const [includeNumbers, setIncludeNumbers] = useState(false);
   const [includeSymbols, setIncludeSymbols] = useState(false);
-  const handleGeneratePassword = () => {
-    if (!includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols) {
-      notify("To generate password you must select atleast one checkbox", true)
-    }
-    else {
-      let characterList = ""
-      if (includeNumbers) {
-        characterList = characterList + numbers
-      }
-      if (includeUpperCase) {
-        characterList = characterList + upperCaseLetters
-      }
-      if (includeLowerCase) {
-        characterList = characterList + lowerCaseLetters
-      }
-      if (includeSymbols) {
-        characterList = characterList + specialCharacters
-      }
-      setPassword(createPassword(characterList))
-      notify("Password is generated successfully", false)
-    }
-    }
+
   return (
     <div className="font-Poppins md:ml-5 w-max text-xl sm:ml-2">
       <div className="flex items-center mb-1 mt-5">
@@ -40,6 +19,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
+          checked={includeSymbols}
+          onChange={(e) => setIncludeSymbols(e.target.checked)}
         >
           Include Symbols
         </label>
@@ -54,6 +35,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
+          checked={includeNumbers}
+          onChange={(e) => setIncludeNumbers(e.target.checked)}
         >
           Include Numbers
         </label>
@@ -68,6 +51,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
+          checked={includeUpperCase}
+          onChange={(e) => setIncludeUpperCase(e.target.checked)}
         >
           Include Uppercase Characters
         </label>
@@ -82,6 +67,8 @@ function RadioOptions() {
         <label
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
+          checked={includeLowerCase}
+          onChange={(e) => setIncludeLowerCase(e.target.checked)}
         >
           Include Lowercase Characters
         </label>
@@ -90,4 +77,4 @@ function RadioOptions() {
   );
 }
 
-export default RadioOptions
+export default RadioOptions;
