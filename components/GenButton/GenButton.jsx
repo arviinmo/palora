@@ -1,4 +1,6 @@
 import React from "react";
+import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from '../Charecter'
+
 
 function GenButton() {
   const handleGeneratePassword = () => {

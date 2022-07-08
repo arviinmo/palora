@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './Character'
 
 
 function RadioOptions() {
