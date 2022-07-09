@@ -31,7 +31,6 @@ function RadioOptions(props) {
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeNumbers}
-          onChange={(e) => props.setIncludeNumbers(!props.includeNumbers)}
         >
           Include Numbers
         </label>
@@ -48,7 +47,6 @@ function RadioOptions(props) {
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeUpperCase}
-          onChange={(e) => props.setIncludeUpperCase(!props.includeUpperCase)}
         >
           Include Uppercase Characters
         </label>
@@ -65,7 +63,6 @@ function RadioOptions(props) {
           htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeLowerCase}
-          onChange={(e) => props.setIncludeLowerCase(!props.includeLowerCase)}
         >
           Include Lowercase Characters
         </label>

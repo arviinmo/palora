@@ -3,7 +3,7 @@ import {
   numbers,
   upperCaseLetters,
   lowerCaseLetters,
-  specialCharacters,
+  Symbols,
 } from "../Charecter";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -29,7 +29,7 @@ function GenButton(props) {
         characterList = characterList + lowerCaseLetters;
       }
       if (props.includeSymbols) {
-        characterList = characterList + specialCharacters;
+        characterList = characterList + Symbols;
       }
       props.setPassword(createPassword(characterList));
     }
