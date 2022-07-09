@@ -29,13 +29,13 @@ export default function Home() {
           </a>
         </Link>
       </div>
-      <div className="w-full flex place-items-center flex-col items-center justify-center h-full content-center ma:mt-[10rem] xs:mt-[5rem]">
+      <div className="w-full flex place-items-center flex-col items-center justify-center h-full content-center ma:mt-[10rem] xs:mt-[4.5rem]">
         <div className="flex flex-row sl:h-[28rem] rounded-2xl place-items-center lg:w-2/5 md:w-9/12 sm:w-11/12 sm:h-[24rem] p-5 bg-[#E0F9B5] border-dotted border-4 border-sky-500">
           <div className="w-full h-full">
             <PassGen />
           </div>
         </div>
-        <footer className="font-Poppins lg:mt-[14rem] ma:mt-[8rem] xs:mt-[4rem] xs:text-sm sl:text-lg flex flex-wrap items-center">
+        <footer className="font-Poppins lg:mt-[14rem] ma:mt-[8rem] xs:mt-[4.5rem] xs:text-sm sl:text-lg flex flex-wrap items-center">
           Proudly made in
           <Link href="#">
             <a className="pl-1 pr-1" target="_blank">
