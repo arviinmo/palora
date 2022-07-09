@@ -4,9 +4,10 @@ function OutputPass(props) {
   return (
     <div>
       <div className="flex justify-center p-3 xs:mt-4">
-        <div className="xs:text-xs sl:text-sm w-7/12 p-1.5 pt-2 rounded-md text-gray-700 font-bold font-Poppins bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none">
+        <div className="xs:text-xs sl:text-sm w-7/12 p-1.5 pt-2 rounded-md text-gray-700 font-bold font-Poppins bg-white bg-clip-padding border-2 border-solid border-gray-300 transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none">
           <input
             type="text"
+            className="w-full border-none outline-0"
             placeholder="Your new password will appear here."
             value={props.password}
             readOnly

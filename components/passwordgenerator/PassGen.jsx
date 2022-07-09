@@ -17,13 +17,13 @@ function PassGen() {
       <div className="flex flex-row flex-wrap">
         <h1 className="sl:text-3xl xs:text-xl font-Yeseva">Password Length:</h1>
         <input
-          className="p-2 ml-2 w-14 rounded-lg font-Poppins"
+          className="p-2 ml-2 w-16 rounded-lg font-Poppins border-solid border-2 outline-0"
           defaultValue={passwordLength}
           onChange={(e) => setPasswordLength(e.target.value)}
           type="number"
           id="password-stregth"
           name="password-strength"
-          max="26"
+          max="128"
           min="6"
         />
       </div>
