@@ -10,7 +10,7 @@ function GenButton(props) {
       !props.includeNumbers &&
       !props.includeSymbols
     ) {
-      console.log("To generate password you must select atleast one checkbox");
+      notify("To generate password you must select atleast one checkbox", true);
     } else {
       let characterList = "";
       if (props.includeNumbers) {
@@ -28,6 +28,30 @@ function GenButton(props) {
       props.setPassword(createPassword(characterList));
     }
   };
+
+  const notify = (message, hasError = false) => {
+    if (hasError) {
+      toast.error(message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+    else {
+      toast(message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }}
 
   const createPassword = (characterList) => {
     let password = ""
