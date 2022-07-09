@@ -35,7 +35,7 @@ export default function Home() {
             <PassGen />
           </div>
         </div>
-        <footer className="font-Poppins lg:mt-[14rem] ma:mt-[8rem] xs:mt-[5rem] xs:text-sm sl:text-lg flex flex-wrap items-center">
+        <footer className="font-Poppins lg:mt-[14rem] ma:mt-[8rem] xs:mt-[4rem] xs:text-sm sl:text-lg flex flex-wrap items-center">
           Proudly made in
           <Link href="#">
             <a className="pl-1 pr-1" target="_blank">
