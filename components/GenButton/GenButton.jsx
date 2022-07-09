@@ -16,7 +16,8 @@ function GenButton(props) {
       !props.includeNumbers &&
       !props.includeSymbols
     ) {
-      notify("To generate password you must select atleast one checkbox", true);
+      notify("To generate password you must select at least one checkbox", true);
+      props.setPassword("")
     } else {
       let characterList = "";
       if (props.includeNumbers) {
