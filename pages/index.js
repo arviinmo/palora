@@ -29,8 +29,8 @@ export default function Home() {
           </a>
         </Link>
       </div>
-      <div className="w-full flex place-items-center flex-col items-center justify-center h-full content-center ma:mt-[10rem] xs:mt-[4.5rem]">
-        <div className="flex flex-row sl:h-[28rem] rounded-2xl place-items-center lg:w-2/5 md:w-9/12 sm:w-11/12 sm:h-[24rem] p-5 bg-[#E0F9B5] border-dotted border-4 border-sky-500">
+      <div className="ma:w-full flex place-items-center flex-col items-center justify-center h-full content-center ma:mt-[10rem] xs:mt-[4.5rem]">
+        <div className="flex flex-row sl:h-[28rem] rounded-2xl place-items-center lg:w-2/5 md:w-9/12 xs:w-11/12 sm:h-[24rem] p-5 bg-[#E0F9B5] border-dotted border-4 border-sky-500">
           <div className="w-full h-full">
             <PassGen />
           </div>
