@@ -51,7 +51,7 @@ function PassGen() {
         passwordLength={passwordLength}
         setPasswordLength={setPasswordLength}
       />
-      <OutputPass />
+      <OutputPass password={password}/>
     </div>
   );
 }
