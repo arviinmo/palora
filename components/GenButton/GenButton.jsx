@@ -39,7 +39,7 @@ function GenButton(props) {
     if (hasError) {
       toast.error(message, {
         position: "bottom-center",
-        autoClose: 2000,
+        autoClose: 2500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -48,8 +48,8 @@ function GenButton(props) {
       });
     } else {
       toast(message, {
-        position: "top-center",
-        autoClose: 2000,
+        position: "bottom-center",
+        autoClose: 2500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

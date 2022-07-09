@@ -1,6 +1,45 @@
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function OutputPass(props) {
+  const copyToClipboard = (password) => {
+    navigator.clipboard.writeText(password);
+  };
+
+  const handleCopyPassword = () => {
+    if (props.password === "") {
+      notify("copy to clipboard failed", true);
+    } else {
+      copyToClipboard(props.password);
+      notify("Password successfully copied to clipboard");
+    }
+  };
+
+  const notify = (message, hasError = false) => {
+    if (hasError) {
+      toast.error(message, {
+        position: "bottom-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } else {
+      toast(message, {
+        position: "bottom-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+
   return (
     <div>
       <div className="flex justify-center p-3 xs:mt-4">
@@ -17,6 +56,7 @@ function OutputPass(props) {
         <button
           type="button"
           className="flex w-max ml-2 px-2 pt-2.5 pb-2 bg-[#53e01f]  text-white font-medium font-Poppins text-sm leading-normal uppercase rounded shadow-md hover:bg-[#4dd01d] hover:shadow-lg focus:bg-[#4dd01d] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#4dd01d] active:shadow-lg transition duration-150 ease-in-out align-center"
+          onClick={handleCopyPassword}
         >
           Copy to Clipboard!
         </button>
