@@ -55,7 +55,7 @@ function OutputPass(props) {
 
         <button
           type="button"
-          className="flex w-max ml-2 px-2 pt-2.5 pb-2 bg-[#53e01f]  text-white font-medium font-Poppins text-sm leading-normal uppercase rounded shadow-md hover:bg-[#4dd01d] hover:shadow-lg focus:bg-[#4dd01d] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#4dd01d] active:shadow-lg transition duration-150 ease-in-out align-center"
+          className="flex w-max ml-1 p-1 content-center items-center xs:text-xt bg-[#53e01f]  text-white font-medium font-Poppins sl:text-base leading-normal uppercase rounded shadow-md hover:bg-[#4dd01d] hover:shadow-lg focus:bg-[#4dd01d] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#4dd01d] active:shadow-lg transition duration-150 ease-in-out align-center"
           onClick={handleCopyPassword}
         >
           Copy to Clipboard!
