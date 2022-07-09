@@ -5,14 +5,12 @@ function RadioOptions(props) {
     <div className="font-Poppins md:ml-5 w-max text-xl sm:ml-2">
       <div className="flex items-center mb-1 mt-5">
         <input
-          id="default-checkbox"
           type="checkbox"
           value="SymbolsIncluded"
           className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           onChange={(e) => props.setIncludeSymbols(!props.includeSymbols)}
         />
         <label
-          htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeSymbols}
         >
@@ -21,14 +19,12 @@ function RadioOptions(props) {
       </div>
       <div className="flex items-center mb-1">
         <input
-          id="default-checkbox"
           type="checkbox"
           value="NumbersIncluded"
           className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           onChange={(e) => props.setIncludeNumbers(!props.includeNumbers)}
         />
         <label
-          htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeNumbers}
         >
@@ -37,14 +33,12 @@ function RadioOptions(props) {
       </div>
       <div className="flex items-center mb-1">
         <input
-          id="default-checkbox"
           type="checkbox"
           value="UppercaseIncluded"
           className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           onChange={(e) => props.setIncludeUpperCase(!props.includeUpperCase)}
         />
         <label
-          htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeUpperCase}
         >
@@ -53,14 +47,12 @@ function RadioOptions(props) {
       </div>
       <div className="flex items-center mb-1">
         <input
-          id="default-checkbox"
           type="checkbox"
           value="LowercaseIncluded"
           className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
           onChange={(e) => props.setIncludeLowerCase(!props.includeLowerCase)}
         />
         <label
-          htmlFor="default-checkbox"
           className="xs:text-base ml-2 sl:text-xl font-medium text-gray-900 dark:text-gray-300"
           checked={props.includeLowerCase}
         >
