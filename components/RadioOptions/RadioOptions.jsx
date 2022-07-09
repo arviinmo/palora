@@ -7,7 +7,7 @@ function RadioOptions(props) {
         <input
           type="checkbox"
           value="SymbolsIncluded"
-          className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          className="w-4 h-4 text-blue-600 outline-0 bg-gray-100 rounded border-gray-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-400"
           onChange={(e) => props.setIncludeSymbols(!props.includeSymbols)}
         />
         <label
@@ -21,7 +21,7 @@ function RadioOptions(props) {
         <input
           type="checkbox"
           value="NumbersIncluded"
-          className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          className="w-4 h-4 text-blue-600 outline-0 bg-gray-100 rounded border-gray-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-400"
           onChange={(e) => props.setIncludeNumbers(!props.includeNumbers)}
         />
         <label
@@ -35,7 +35,7 @@ function RadioOptions(props) {
         <input
           type="checkbox"
           value="UppercaseIncluded"
-          className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          className="w-4 h-4 text-blue-600 outline-0 bg-gray-100 rounded border-gray-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-400"
           onChange={(e) => props.setIncludeUpperCase(!props.includeUpperCase)}
         />
         <label
@@ -49,7 +49,7 @@ function RadioOptions(props) {
         <input
           type="checkbox"
           value="LowercaseIncluded"
-          className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          className="w-4 h-4 text-blue-600 outline-0 bg-gray-100 rounded border-gray-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-400"
           onChange={(e) => props.setIncludeLowerCase(!props.includeLowerCase)}
         />
         <label
