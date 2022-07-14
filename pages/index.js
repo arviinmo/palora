@@ -37,17 +37,15 @@ export default function Home() {
         </div>
         <footer className="font-Poppins lg:mt-[14rem] ma:mt-[8rem] xs:mt-[6.5rem] xs:text-sm sl:text-lg flex flex-wrap items-center">
           Proudly made in
-          <Link href="#">
-            <a className="pl-1 pr-1" target="_blank">
-              <Image
-                src="/fav.svg"
-                alt="Vercel Logo"
-                width={32}
-                height={16}
-                title="Kurdistan"
-              />
-            </a>
-          </Link>
+          <a className="pl-1 pr-1" target="_blank">
+            <Image
+              src="/fav.svg"
+              alt="Kurdistan flag"
+              width={32}
+              height={16}
+              title="Kurdistan"
+            />
+          </a>
           by
           <Link href="https://arvin.vercel.app">
             <a className="pl-1 font-Yeseva" target="_blank">
