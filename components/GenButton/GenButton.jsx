@@ -16,8 +16,11 @@ function GenButton(props) {
       !props.includeNumbers &&
       !props.includeSymbols
     ) {
-      notify("To generate password you must select at least one checkbox", true);
-      props.setPassword("")
+      notify(
+        "To generate password you must select at least one checkbox",
+        true
+      );
+      props.setPassword("");
     } else {
       let characterList = "";
       if (props.includeNumbers) {
@@ -72,7 +75,7 @@ function GenButton(props) {
 
   return (
     <div>
-      <div className="flex text-center items-center justify-center lg:mt-8 xs:mt-2">
+      <div className="flex items-center justify-center text-center lg:mt-8 xs:mt-2">
         <button
           type="button"
           className="flex w-max ml-2 px-2 pt-2.5 pb-2 bg-[#ffb800] text-white font-medium font-Poppins sl:text-lg xs:text-sm leading-normal rounded-lg shadow-md hover:bg-[#ebaa00] hover:shadow-lg focus:bg-[#ebaa00] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#d69b00] active:shadow-lg transition duration-150 ease-in-out align-center"
