@@ -17,7 +17,7 @@ function PassGen() {
       <div className="flex flex-row flex-wrap">
         <h1 className="sl:text-3xl xs:text-xl font-Yeseva">Password Length:</h1>
         <input
-          className="p-2 ml-2 w-16 rounded-lg font-Poppins border-solid border-2 outline-0"
+          className="w-16 p-2 ml-2 border-2 border-solid rounded-lg font-Poppins outline-0"
           defaultValue={passwordLength}
           onChange={(e) => setPasswordLength(e.target.value)}
           type="number"
@@ -51,7 +51,7 @@ function PassGen() {
         passwordLength={passwordLength}
         setPasswordLength={setPasswordLength}
       />
-      <OutputPass password={password}/>
+      <OutputPass password={password} />
     </div>
   );
 }
