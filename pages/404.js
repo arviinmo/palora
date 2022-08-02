@@ -1,12 +1,10 @@
 export default function Custom404() {
   return (
     <main className="h-screen w-full flex flex-col justify-center items-center bg-[#ffffff]">
-      <h1 className="font-extrabold tracking-widest text-black text-9xl">
+      <h1 className="text-6xl font-extrabold tracking-widest text-black">
         404
       </h1>
-      <div className="bg-[#FF6A3D] text-white px-2 text-sm rounded rotate-12 absolute">
-        Page Not Found
-      </div>
+      <h3>Page not found!</h3>
       <button className="mt-5">
         <a
           href="./"
